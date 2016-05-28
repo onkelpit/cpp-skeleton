@@ -99,7 +99,7 @@ if (CPPSKELETON_RUN_CPPLINT)
     # add a cpplint target to the "all" target
     add_custom_target(cpplint
      ALL
-     COMMAND python ${PROJECT_SOURCE_DIR}/cpplint/cpplint.py ${CPPLINT_ARG_OUTPUT} ${CPPLINT_ARG_LINELENGTH} ${CPPLINT_ARG_VERBOSE} ${source_files}
+     COMMAND python2 ${PROJECT_SOURCE_DIR}/cpplint/cpplint.py ${CPPLINT_ARG_OUTPUT} ${CPPLINT_ARG_LINELENGTH} ${CPPLINT_ARG_VERBOSE} ${source_files}
     )
 else (CPPSKELETON_RUN_CPPLINT)
     message(STATUS "CPPSKELETON_RUN_CPPLINT OFF")
